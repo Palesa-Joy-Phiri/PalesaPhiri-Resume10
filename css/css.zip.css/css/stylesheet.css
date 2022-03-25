@@ -81,6 +81,10 @@ h5 {
   margin-right: 7px;
 }
 
+.carouselItems img {
+  height: 10vw;
+}
+
 /* ID SECTION */
 
 #Name {
@@ -232,4 +236,9 @@ h5 {
 
 #Linksdiv {
   display: inline-block;
+}
+
+#carouselExampleIndicators {
+  padding-left: 45%;
+  margin-bottom: 10%;
 }
