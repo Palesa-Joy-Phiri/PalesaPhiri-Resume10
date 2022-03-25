@@ -253,6 +253,12 @@ width: 10%;
 #carouselExampleIndicators {
   padding-left: 40%;
   margin-bottom: 27%;
+  background-color: #f88d12;background-image:
+}
+  
+#carouselItems {
+  url("/Images/Marble\ pattern\ background.jpg");
+
 }
 
 .Realskillsdiv{
@@ -289,6 +295,11 @@ form{
   text-align: center; 
   justify-content: space-between;
   padding-bottom: 15px;
+  background-image: 
+  url("/Images/Marble\ pattern\ background.jpg");
+  padding-top: 5%;
+  padding-right: 6%;
+  border-radius: 90%;
 }
 
 label{
@@ -316,4 +327,5 @@ input [type="checkbox"] [type="radio"]{
   border: 5px;
   width: 150px;
   margin-top: 2%;
+  margin-bottom: 5%;
 }
