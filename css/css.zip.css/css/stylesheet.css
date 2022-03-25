@@ -17,7 +17,7 @@ header {
   padding-top: 1px;
 
   background-image: 
-  url("/Images/Marble\ pattern\ background.jpg");
+  url("/Images/colour-background.jpeg");
 }
 
 main {
@@ -253,13 +253,8 @@ width: 10%;
 #carouselExampleIndicators {
   padding-left: 40%;
   margin-bottom: 27%;
-  background-color: #f88d12;background-image:
 }
-  
-#carouselItems {
-  url("/Images/Marble\ pattern\ background.jpg");
 
-}
 
 .Realskillsdiv{
   margin: auto;
@@ -296,7 +291,7 @@ form{
   justify-content: space-between;
   padding-bottom: 15px;
   background-image: 
-  url("/Images/Marble\ pattern\ background.jpg");
+  url("/Images/colour-backgroun.jpeg");
   padding-top: 5%;
   padding-right: 6%;
   border-radius: 90%;
@@ -306,6 +301,7 @@ label{
   width: 80px;
   display: inline-block;
   text-align: right;   
+  font-weight: bolder;
 }
 
 input{
@@ -322,6 +318,7 @@ input [type="checkbox"] [type="radio"]{
 
 #Submit{
   font-weight: 300;
+  font-weight: bold;
   background-color: rgb(240, 112, 89);
   border-radius: 10px;
   border: 5px;
