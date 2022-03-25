@@ -68,6 +68,11 @@ h5 {
   border-color: rgb(235, 153, 21);
 }
 
+.Icons:hover{
+  transform: translateY(-1rem)
+  scale(1.5)
+}
+
 .Icons {
   border-radius: 50%;
   width: 50px;
