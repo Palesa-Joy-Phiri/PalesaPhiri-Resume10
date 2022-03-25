@@ -17,7 +17,7 @@ header {
   padding-top: 1px;
 
   background-image: 
-  url("/Images/Pink-watercolor-background.webp");
+  url("/Images/Marble\ pattern\ background.jpg");
 }
 
 main {
@@ -139,12 +139,12 @@ h5 {
 #Aside {
   color: rgb(11, 131, 131);
   background-color: #ffbf69;
-  width: 150px;
-  height: 1890px;
-  padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
+  width: 100px;
+  height: 40px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
 }
 
 #Statement {
@@ -238,7 +238,82 @@ h5 {
   display: inline-block;
 }
 
+.navbarMenu {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #06375f;
+}
+
+.menuButton {
+cursor:pointer;
+height: 10%;
+width: 10%;
+}
+
+
 #carouselExampleIndicators {
   padding-left: 40%;
   margin-bottom: 27%;
+}
+
+.Realskillsdiv{
+  margin: auto;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 380px){
+  .Realskillsdiv {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 430px) {
+  .Realskillsdiv { 
+    grid-template-columns: repeat(2,1fr); 
+  }
+}
+
+@media (min-width: 900px) {
+  .Realskillsdiv { 
+    grid-template-columns: repeat(2,1fr); 
+  }
+}
+
+
+
+/*Form*/
+
+form{
+  text-align: center; 
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+label{
+  width: 80px;
+  display: inline-block;
+  text-align: right;   
+}
+
+input{
+  width: px;
+}
+
+input [type="checkbox"] [type="radio"]{
+  margin-left: 32px;
+}
+
+#About{
+  height: 100px;
+}
+
+#Submit{
+  font-weight: 300;
+  background-color: rgb(240, 112, 89);
+  border-radius: 10px;
+  border: 5px;
+  width: 150px;
+  margin-top: 2%;
 }

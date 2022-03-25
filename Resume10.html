@@ -60,16 +60,29 @@
 <main>
 
 <!-- Start of aside: This contains a navigation menu to help access different sections on page -->
-  <aside id="Aside">
-    <h3> Menu </h3>
+<aside id="Aside">
+  
+    <div class="navbar-header">
+      <a id="navbarMenu" href="#"> Menu</a>
+
+      <button type="button" id="menuButton" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
       <ul id="li">
 
-        <li> <a href="#Skills"> Skills </a> </li>
-        <li> <a href="#Education" > Education </a>  </li>
-        <li> <a href="#Experience" > Experience </a>  </li>
-        <li> <a href="#Socialmedia" > Social's </a>  </li>
-
+        <li> <a href="#"> Skills </a> </li>
+        <li> <a href="#" > Education </a>  </li>
+        <li> <a href="#" > Experience </a>  </li>
+        <li> <a href="#" > Social's </a>  </li>
+  
       </ul>
+    </div>
   </aside>
 
 <!-- Start of article -->
@@ -218,11 +231,49 @@
     </a>
   </div>
 
+  <div>
+    <!-- Form -->
+
+    <form id="Contact">
+
+      <form action="CodeSpace" method="post"> 
+        <div class="form">
+          <label for="User id"> Name: </label>
+          <input type="text" id="User id" name="Name" required>  
+        </div>
+
+        <div class="form">
+          <label for="Surname"> Surname: </label>
+          <input type="text" id="Surname" name="Surname" required>
+        </div>
+
+        <div class="form">
+          <label for="Email"> Email: </label>
+          <input type="email" id="Email" name="Email" required>
+        </div>
+
+       <div class="form">
+          <label for="About"> About: </label>
+          <input type="text" id="About" name="About">
+        </div>
+        
+        <div>
+          <label for="Submit"> </label>
+          <input type="submit" id="Submit" name="Submit">
+        </div>
+
+   </form>
+
+ </div>
+
+
 </main>
 
 
 <!--start of footer-->
 <footer>
+
+
 
   <p id="Socialmedia"> Social Media </P>
 
