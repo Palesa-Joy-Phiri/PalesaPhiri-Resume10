@@ -56,6 +56,20 @@ h5 {
   margin-left: 200px;
 }
 
+.container {
+  display: grid;
+  height: 50vh;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "skill1 skill2 skill3";
+}
+
+.Realskillsdiv{
+  margin: auto;
+  display: grid;
+  grid-gap: 2rem;
+}
+
 .CCOskills {
   color: #b13759;
   font-size: 20px;
@@ -84,6 +98,18 @@ h5 {
 .carouselItems img {
   height: 20vw;
 }
+
+.navbarMenu {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #06375f;
+}
+
+.menuButton {
+cursor:pointer;
+height: 10%;
+width: 10%;
+}
+
  
 /* ID SECTION */
 
@@ -180,6 +206,7 @@ h5 {
  width: 20%;
  margin-left: 60px;
  margin-bottom: 10px;
+ grid-area: skill1;
 }
 
 #Computerskills {
@@ -187,6 +214,7 @@ h5 {
  padding: 10px;
  width: 20%;
  margin-bottom: 10px;
+ grid-area: skill2;
 }
 
 #Otherskills {
@@ -195,6 +223,7 @@ h5 {
   width: 20%;
   margin-right: 60px;
   margin-bottom: 10px;
+  grid-area: skill3;
 }
 
 
@@ -238,28 +267,24 @@ h5 {
   display: inline-block;
 }
 
-.navbarMenu {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #06375f;
+#About{
+  height: 100px;
 }
 
-.menuButton {
-cursor:pointer;
-height: 10%;
-width: 10%;
+#Submit{
+  font-weight: 300;
+  font-weight: bold;
+  background-color: rgb(240, 112, 89);
+  border-radius: 10px;
+  border: 5px;
+  width: 150px;
+  margin-top: 2%;
+  margin-bottom: 5%;
 }
-
 
 #carouselExampleIndicators {
   padding-left: 40%;
   margin-bottom: 27%;
-}
-
-
-.Realskillsdiv{
-  margin: auto;
-  display: grid;
-  grid-gap: 2rem;
 }
 
 /* Media Queries */
@@ -282,7 +307,16 @@ width: 10%;
   }
 }
 
-
+@media only screen and (max-width:550px){
+  .container {
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr; 
+   grid-template-areas:
+    "skill1"
+    "skill2"
+    "skill3";
+  }
+}
 
 /*Form*/
 
@@ -304,25 +338,6 @@ label{
   font-weight: bolder;
 }
 
-input{
-  width: px;
-}
-
 input [type="checkbox"] [type="radio"]{
   margin-left: 32px;
-}
-
-#About{
-  height: 100px;
-}
-
-#Submit{
-  font-weight: 300;
-  font-weight: bold;
-  background-color: rgb(240, 112, 89);
-  border-radius: 10px;
-  border: 5px;
-  width: 150px;
-  margin-top: 2%;
-  margin-bottom: 5%;
 }
