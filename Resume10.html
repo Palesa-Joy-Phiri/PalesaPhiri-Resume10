@@ -32,14 +32,14 @@
   <!--Picture starts-->
 
   <picture>
-    <source media="(min-width: 650px)" srcset="./Images/Palesa Picture - Small.png">
-    <source media="(min-width: 1000px)" srcset="./Images/Palesa Picture - Medium.png">
+    <source media="(min-width: 450px)" srcset="./Images/Palesa Picture - Small.png">
+    <source media="(min-width: 850px)" srcset="./Images/Palesa Picture - Medium.png">
     <img id="image" src="./Images/Palesa Picture - Large.png" alt="Image of Palesa Joy Phiri">
   </picture>
 
   <!--Picture ends-->
   </div>
-
+    <br>
     <h2 id="resume"> RESUME </h2>
 
 <!--Introduction statement to get to know Palesa Phiri-->
@@ -65,23 +65,24 @@
     <div class="navbar-header">
       <a id="navbarMenu" href="#"> Menu</a>
 
-      <button type="button" id="menuButton" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button type="button" 
+              id="menuButton"
+              data-bs-toggle="collapse"
+              data-bs-target="#myNavbar"
+              aria-controls="myNavbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+
+              <span class="icon-bar"></span>  
       </button>
 
-    </div>
-
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul id="li">
-
-        <li> <a href="#"> Skills </a> </li>
-        <li> <a href="#" > Education </a>  </li>
-        <li> <a href="#" > Experience </a>  </li>
-        <li> <a href="#" > Social's </a>  </li>
-  
-      </ul>
+      <div class="collapse navbar-collapse" id="myNavbar"> <br>
+      
+        <a aria-current="page" href="#skills" > Skills </a>
+        <a href="#education" > Education </a>
+        <a href="#experience" > Experience </a>  
+        <a href="#socials"> Social's </a>
+      </div>
     </div>
   </aside>
 
@@ -202,7 +203,7 @@
 
 
     <form action="CodeSpace" method="post" id="contact"> 
-      
+
       <div class="form">
         <label for="User id"> Name: </label>
         <input type="text" id="user id" name="Name" required>  
