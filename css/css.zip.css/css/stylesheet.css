@@ -312,6 +312,14 @@ input [type="checkbox"] [type="radio"]{
   margin-left: 32px;
 }
 
+#contactForm {
+  text-align: center;
+  text-decoration: double;
+  margin-top: 4px;
+  color: #f0690f;
+  font-weight: 700;
+}
+
 #about{
   height: 100px;
 }
